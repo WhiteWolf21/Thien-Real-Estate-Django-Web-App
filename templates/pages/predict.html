@@ -1,0 +1,195 @@
+{% extends 'base.html' %} 
+
+{% load humanize %}
+
+{% block title %} | Predict {% endblock %}
+
+{% block content %}
+<!-- Showcase -->
+<section id="showcase">
+    <div class="container text-center">
+      <div class="home-search p-5">
+        <div class="overlay p-5">
+          <h1 class="display-4 mb-4">
+            Predict Real Estate Price
+          </h1>
+          <!-- <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quas, asperiores eveniet vel nostrum magnam
+            voluptatum tempore! Consectetur, id commodi!</p> -->
+          <div class="search">
+            <form action="{% url 'predict-result' %}">
+              <!-- Form Row 1 -->
+              <div class="form-row">
+                  <div class="col-md-3 mb-3">
+                      <label class="sr-only">Address District</label>
+                      <select name="address_district" class="form-control" required>
+                        <option value="" selected="selected" disabled="disabled">Address District</option>
+                        {% for key,value in address_district.items %}
+                          <option value="{{ key }}">{{ value }}</option>
+                        {% endfor %}
+                      </select>
+                    </div>
+
+                  <div class="col-md-3 mb-3">
+                      <label class="sr-only">Address Street</label>
+                      <select name="address_street" class="form-control" required>
+                        <option value="" selected="true" disabled="disabled">Address Street</option>
+                        {% for key,value in address_street.items %}
+                          <option value="{{ key }}">{{ value }}</option>
+                        {% endfor %}
+                      </select>
+                    </div>
+
+                    <div class="col-md-3 mb-3">
+                        <label class="sr-only">Realestate Type</label>
+                        <select name="realestate_type" class="form-control" required>
+                          <option value="" selected="true" disabled="disabled">Realestate Type</option>
+                          {% for key,value in realestate_type.items %}
+                            <option value="{{ key }}">{{ value }}</option>
+                          {% endfor %}
+                        </select>
+                      </div>
+
+                      <div class="col-md-3 mb-3">
+                          <label class="sr-only">Transaction Type</label>
+                          <select name="transaction_type" class="form-control" required>
+                            <option value="" selected="true" disabled="disabled">Transaction Type</option>
+                            {% for key,value in transaction_type.items %}
+                              <option value="{{ key }}">{{ value }}</option>
+                            {% endfor %}
+                          </select>
+                        </div>
+
+              </div>
+              <!-- Form Row 2 -->
+              <div class="form-row">
+
+                  <div class="col-md-3 mb-3">
+                      <label class="sr-only">Street Position</label>
+                      <select name="position_street" class="form-control" required>
+                        <option value="" selected="true" disabled="disabled">Street Position</option>
+                        {% for key,value in position_street.items %}
+                          <option value="{{ key }}">{{ value }}</option>
+                        {% endfor %}
+                      </select>
+                    </div>
+
+                    <div class="col-md-3 mb-3">
+                        <label class="sr-only">Legal Type</label>
+                        <select name="legal" class="form-control" required>
+                          <option value="" selected="true" disabled="disabled">Legal Type</option>
+                          {% for key,value in legal.items %}
+                            <option value="{{ key }}">{{ value }}</option>
+                          {% endfor %}
+                        </select>
+                      </div>  
+
+                  <div class="col-md-3 mb-3">
+                      <label class="sr-only">Area</label>
+                      <input type="number" name="area" class="form-control" placeholder="Area" required>
+                    </div>
+
+                    <div class="col-md-3 mb-3">
+                        <label class="sr-only">Floor</label>
+                        <input type="number" name="floor" min="1" max="100" class="form-control" placeholder="Floor" required>
+                      </div>
+
+              </div>
+              <button class="btn btn-secondary btn-block mt-4" type="submit">Submit form</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<br>
+  <!-- Alerts -->
+  {% include 'partials/_alerts.html' %}
+
+  <!-- Listings -->
+  <section id="listings" class="py-5">
+    <div class="container">
+      <h3 class="text-center mb-3">Latest Listings</h3>
+      <div class="row">
+        {% if listings %}
+          {% for listing in listings %}
+            <!-- Listing 1 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="card listing-preview">
+                <img class="card-img-top" src="{{ listing.photo_main.url }}" alt="">
+                <div class="card-img-overlay">
+                  <h2>
+                    <span class="badge badge-secondary text-white">${{ listing.price | intcomma }}</span>
+                  </h2>
+                </div>
+                <div class="card-body">
+                  <div class="listing-heading text-center">
+                    <h4 class="text-primary">{{ listing.title }}</h4>
+                    <p>
+                      <i class="fas fa-map-marker text-secondary"></i> {{ listing.city }} {{ listing.state }}, {{ listing.zipcode }}</p>
+                  </div>
+                  <hr>
+                  <div class="row py-2 text-secondary">
+                    <div class="col-6">
+                      <i class="fas fa-th-large"></i> Sqft: {{ listing.sqft }}</div>
+                    <div class="col-6">
+                      <i class="fas fa-car"></i> Garage: {{ listing.garage }}</div>
+                  </div>
+                  <div class="row py-2 text-secondary">
+                    <div class="col-6">
+                      <i class="fas fa-bed"></i> Bedrooms: {{ listing.bedrooms }}</div>
+                    <div class="col-6">
+                      <i class="fas fa-bath"></i> Bathrooms: {{ listing.bathrooms }}</div>
+                  </div>
+                  <hr>
+                  <div class="row py-2 text-secondary">
+                    <div class="col-6">
+                      <i class="fas fa-user"></i> {{ listing.realtor }}</div>
+                  </div>
+                  <div class="row text-secondary pb-2">
+                    <div class="col-6">
+                      <i class="fas fa-clock"></i> {{ listing.list_date | timesince }}</div>
+                  </div>
+                  <hr>
+                  <a href="{% url 'listing' listing.id %}" class="btn btn-primary btn-block">More Info</a>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        {% else %}
+          <div class="col-md-12">
+            <p>No Listings Available</p>
+          </div>
+        {% endif %}
+
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="py-5 bg-secondary text-white">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-4">
+          <i class="fas fa-comment fa-4x mr-4"></i>
+          <hr>
+          <h3>Consulting Services</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, debitis nam! Repudiandae, provident iste consequatur
+            hic dignissimos ratione ea quae.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="fas fa-home fa-4x mr-4"></i>
+          <hr>
+          <h3>Propery Management</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, debitis nam! Repudiandae, provident iste consequatur
+            hic dignissimos ratione ea quae.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="fas fa-suitcase fa-4x mr-4"></i>
+          <hr>
+          <h3>Renting & Selling</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, debitis nam! Repudiandae, provident iste consequatur
+            hic dignissimos ratione ea quae.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}

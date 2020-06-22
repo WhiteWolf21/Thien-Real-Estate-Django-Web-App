@@ -10,16 +10,16 @@ A simple, reponsive  website. Built with:
 - Vanilla JS - ES6
 - JQuery
 
-If you are new to Django, checkout the [Django 2.x Cheat Sheet](https://github.com/TheCaffeineDev/Real-Estate-Django-Web-App/blob/master/django_cheat_sheet.md)
+If you are new to Django, checkout the [Django 2.x Cheat Sheet](https://github.com/WhiteWolf21/Thien-Real-Estate-Django-Web-App/tree/master/django_cheat_sheet.md)
 
-If you want to deploy this Web App In Ubuntu 18.04 Server, Please Follow this [Guide](https://github.com/TheCaffeineDev/Real-Estate-Django-Web-App/blob/master/Django_Deployment_to_Ubuntu_18.04.md) 
+If you want to deploy this Web App In Ubuntu 18.04 Server, Please Follow this [Guide](https://github.com/WhiteWolf21/Thien-Real-Estate-Django-Web-App/tree/master/screenshots/Django_Deployment_to_Ubuntu_18.04.md) 
 
 ## How to run this project (Ubuntu 18.04)
 
 1. **Clone the project**
 
 ```sh
-git clone https://github.com/TheCaffeineDev/Real-Estate-Django-Web-App.git
+git clone https://github.com/WhiteWolf21/Thien-Real-Estate-Django-Web-App.git
 ```
 
 2.  **Make sure you are in *Real-Estate-Django-Web-App* folder**
@@ -103,28 +103,37 @@ Note: Please change those gmail credentials from real_estate folder you will get
 
 - **HOME**
 
-![Home](https://github.com/TheCaffeineDev/Real-Estate-Django-Web-App/blob/master/screenshots/s1.JPG)
+![Home](https://github.com/WhiteWolf21/Thien-Real-Estate-Django-Web-App/tree/master/screenshots/s1.JPG)
+
+- **PREDICT REAL ESTATE PRICE**
+
+![Home](https://github.com/WhiteWolf21/Thien-Real-Estate-Django-Web-App/tree/master/p1.JPG)
+
+- **PREDICT REAL ESTATE PRICE RESULT**
+
+![Predict Real Estate Price Result](https://github.com/WhiteWolf21/Thien-Real-Estate-Django-Web-App/tree/master/screenshots/p2.JPG)
+
+![Predict Real Estate Price Result](https://github.com/WhiteWolf21/Thien-Real-Estate-Django-Web-App/tree/master/screenshots/p3.JPG)
 
 - **Listings** 
 
-
-![Listings](https://github.com/TheCaffeineDev/Real-Estate-Django-Web-App/blob/master/screenshots/s3list.JPG)
+![Listings](https://github.com/WhiteWolf21/Thien-Real-Estate-Django-Web-App/tree/master/screenshots/s3list.JPG)
 
 - **Registration** 
 
-![Registration](https://github.com/TheCaffeineDev/Real-Estate-Django-Web-App/blob/master/screenshots/s4reg.JPG)
+![Registration](https://github.com/WhiteWolf21/Thien-Real-Estate-Django-Web-App/tree/master/screenshots/s4reg.JPG)
 
 - **Admin Panel - 1**
 
-![Admin](https://github.com/TheCaffeineDev/Real-Estate-Django-Web-App/blob/master/screenshots/s5adm.JPG)
+![Admin](https://github.com/WhiteWolf21/Thien-Real-Estate-Django-Web-App/tree/master/screenshots/s5adm.JPG)
 
 - **Admin Panel - 2**
 
-![Admin](https://github.com/TheCaffeineDev/Real-Estate-Django-Web-App/blob/master/screenshots/s6r.JPG)
+![Admin](https://github.com/WhiteWolf21/Thien-Real-Estate-Django-Web-App/tree/master/screenshots/s6r.JPG)
 
 - **About**
 
-![About ](https://github.com/TheCaffeineDev/Real-Estate-Django-Web-App/blob/master/screenshots/s2about.JPG)
+![About](https://github.com/WhiteWolf21/Thien-Real-Estate-Django-Web-App/tree/master/screenshots/s2about.JPG)
 
 
 ## Acknowledgments
