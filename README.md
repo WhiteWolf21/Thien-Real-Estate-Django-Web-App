@@ -107,13 +107,13 @@ Note: Please change those gmail credentials from real_estate folder you will get
 
 - **PREDICT REAL ESTATE PRICE**
 
-![Home](https://github.com/TheCaffeineDev/Real-Estate-Django-Web-App/blob/master/screenshots/p1.JPG)
+![Predict Real Estate Price](https://github.com/TheCaffeineDev/Real-Estate-Django-Web-App/blob/master/screenshots/p1.PNG)
 
 - **PREDICT REAL ESTATE PRICE RESULT**
 
-![Predict Real Estate Price Result](https://github.com/TheCaffeineDev/Real-Estate-Django-Web-App/blob/master/screenshots/p2.JPG)
+![Predict Real Estate Price Result](https://github.com/TheCaffeineDev/Real-Estate-Django-Web-App/blob/master/screenshots/p2.PNG)
 
-![Predict Real Estate Price Result](https://github.com/TheCaffeineDev/Real-Estate-Django-Web-App/blob/master/screenshots/p3.JPG)
+![Predict Real Estate Price Result](https://github.com/TheCaffeineDev/Real-Estate-Django-Web-App/blob/master/screenshots/p3.PNG)
 
 - **Listings** 
 
