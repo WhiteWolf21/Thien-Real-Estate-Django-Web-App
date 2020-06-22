@@ -103,37 +103,37 @@ Note: Please change those gmail credentials from real_estate folder you will get
 
 - **HOME**
 
-![Home](https://github.com/WhiteWolf21/Thien-Real-Estate-Django-Web-App/tree/master/screenshots/s1.JPG)
+![Home](https://github.com/TheCaffeineDev/Real-Estate-Django-Web-App/blob/master/screenshots/s1.JPG)
 
 - **PREDICT REAL ESTATE PRICE**
 
-![Home](https://github.com/WhiteWolf21/Thien-Real-Estate-Django-Web-App/tree/master/p1.JPG)
+![Home](https://github.com/TheCaffeineDev/Real-Estate-Django-Web-App/blob/master/screenshots/p1.JPG)
 
 - **PREDICT REAL ESTATE PRICE RESULT**
 
-![Predict Real Estate Price Result](https://github.com/WhiteWolf21/Thien-Real-Estate-Django-Web-App/tree/master/screenshots/p2.JPG)
+![Predict Real Estate Price Result](https://github.com/TheCaffeineDev/Real-Estate-Django-Web-App/blob/master/screenshots/p2.JPG)
 
-![Predict Real Estate Price Result](https://github.com/WhiteWolf21/Thien-Real-Estate-Django-Web-App/tree/master/screenshots/p3.JPG)
+![Predict Real Estate Price Result](https://github.com/TheCaffeineDev/Real-Estate-Django-Web-App/blob/master/screenshots/p3.JPG)
 
 - **Listings** 
 
-![Listings](https://github.com/WhiteWolf21/Thien-Real-Estate-Django-Web-App/tree/master/screenshots/s3list.JPG)
+![Listings](https://github.com/TheCaffeineDev/Real-Estate-Django-Web-App/blob/master/screenshots/s3list.JPG)
 
 - **Registration** 
 
-![Registration](https://github.com/WhiteWolf21/Thien-Real-Estate-Django-Web-App/tree/master/screenshots/s4reg.JPG)
+![Registration](https://github.com/TheCaffeineDev/Real-Estate-Django-Web-App/blob/master/screenshots/s4reg.JPG)
 
 - **Admin Panel - 1**
 
-![Admin](https://github.com/WhiteWolf21/Thien-Real-Estate-Django-Web-App/tree/master/screenshots/s5adm.JPG)
+![Admin](https://github.com/TheCaffeineDev/Real-Estate-Django-Web-App/blob/master/screenshots/s5adm.JPG)
 
 - **Admin Panel - 2**
 
-![Admin](https://github.com/WhiteWolf21/Thien-Real-Estate-Django-Web-App/tree/master/screenshots/s6r.JPG)
+![Admin](https://github.com/TheCaffeineDev/Real-Estate-Django-Web-App/blob/master/screenshots/s6r.JPG)
 
 - **About**
 
-![About](https://github.com/WhiteWolf21/Thien-Real-Estate-Django-Web-App/tree/master/screenshots/s2about.JPG)
+![About](https://github.com/TheCaffeineDev/Real-Estate-Django-Web-App/blob/master/screenshots/s2about.JPG)
 
 
 ## Acknowledgments
