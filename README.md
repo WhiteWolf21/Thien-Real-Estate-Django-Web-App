@@ -113,7 +113,7 @@ Note: Please change those gmail credentials from real_estate folder you will get
 
 ![Predict Real Estate Price Result 1](https://github.com/WhiteWolf21/Thien-Real-Estate-Django-Web-App/blob/master/screenshots/p2.png)
 
-![Predict Real Estate Price Result 2](https://github.com/WhiteWolf21/Thien-Real-Estate-Django-Web-App/blob/master/screenshots/p3.png)
+![Predict Real Estate Price Result 2](https://github.com/WhiteWolf21/Thien-Real-Estate-Django-Web-App/blob/master/screenshots/p3s.png)
 
 - **Listings** 
 
